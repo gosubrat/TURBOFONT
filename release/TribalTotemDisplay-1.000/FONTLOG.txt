@@ -1,0 +1,11 @@
+FONTLOG for Tribal Totem Display
+================================
+
+2026-11-13 - Tribal Totem Display 1.000
+- First commercial release.
+- 120 mapped characters: A-Z, 0-9, punctuation, ASCII symbols, Latin-1
+  uppercase accents, currency and typographic marks.
+- Four artwork variants per glyph (ss01-ss03).
+- Kerning feature, colour SVG + COLRv0 tables, flat companion, WOFF2 web font.
+- Validated with internal checks, HarfBuzz, FontBakery, OTS, and Chromium,
+  Firefox and WebKit.

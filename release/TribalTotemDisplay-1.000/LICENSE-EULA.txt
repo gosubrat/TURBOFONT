@@ -1,0 +1,101 @@
+TRIBAL TOTEM DISPLAY — COMMERCIAL FONT LICENCE AGREEMENT
+
+Licensor: Tribal Totem Display project
+Font Software: the Tribal Totem Display font files distributed with this
+licence, including the colour OTF, the flat OTF and the WOFF2 web font, plus
+any accompanying documentation.
+
+By installing, copying or using the Font Software you agree to this licence.
+If you do not agree, do not install or use the Font Software and delete it.
+
+1. GRANT OF LICENCE
+The Licensor grants you a perpetual, worldwide, non-exclusive, non-transferable
+licence to install and use the Font Software on up to five (5) computers or
+devices controlled by you or your organisation, and to use the Font Software
+to create, display and distribute designs, documents, images, video, web pages
+and physical products.
+
+2. PERMITTED USES
+You may:
+  a. use the Font Software for personal and commercial design work, including
+     logos, branding, packaging, advertising, publications and merchandise;
+  b. embed the Font Software in PDF documents, e-books, presentations, videos
+     and static images, including documents intended for commercial
+     distribution;
+  c. use the WOFF2 file as a web font on websites and web applications that
+     you own or operate;
+  d. embed the Font Software in a mobile or desktop application, provided the
+     Font Software is not made available to end users as an editable font file
+     and is not the primary product being sold;
+  e. convert text set in the Font Software to outlines or pixels for any
+     permitted use.
+
+3. RESTRICTIONS
+You may not:
+  a. sell, resell, rent, lease, sublicense, distribute or otherwise make the
+     Font Software available as a font file, alone or in a bundle;
+  b. include the Font Software in a font collection, template, theme, design
+     system, logo generator, font-editing product or other product from which
+     the font file can be extracted or used to create new fonts;
+  c. modify, adapt, translate, reverse engineer, decompile or create derivative
+     fonts from the Font Software;
+  d. use the Font Software to create a competing typeface or to add glyphs to
+     another font;
+  e. remove, alter or obscure any copyright, licence or proprietary notice;
+  f. claim authorship of the Font Software or register it (or a derivative) as
+     a trademark, design or font name;
+  g. use the Font Software for unlawful purposes or in a way that infringes the
+     rights of others.
+
+4. OWNERSHIP
+The Font Software is licensed, not sold. The Licensor retains all copyright,
+trademark and other rights in the Font Software and its artwork. No rights are
+granted except those expressly stated in this licence. The name "Tribal Totem
+Display" and any associated names are not licensed for use as a trademark
+except to identify the Font Software in a design credit.
+
+5. EMBEDDING AND DISTRIBUTION
+Embedding the Font Software in a document, application, website or product is
+permitted only where the Font Software cannot be extracted and used as a
+standalone font by the recipient. If a recipient needs to edit text in the
+Font Software, they must obtain their own licence.
+
+6. LIMITED WARRANTY
+The Licensor warrants that the Font Software will materially conform to its
+accompanying documentation for thirty (30) days after purchase. If it does not,
+the Licensor will, at its option, replace the Font Software or refund the
+purchase price. This warranty does not apply to problems caused by misuse,
+modification, incompatible software or operating systems not described in the
+documentation.
+
+7. DISCLAIMER
+EXCEPT FOR THE LIMITED WARRANTY IN SECTION 6, THE FONT SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE AND NON-INFRINGEMENT.
+
+8. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR
+LOST PROFITS, REVENUE, DATA OR BUSINESS OPPORTUNITY, ARISING FROM THE USE OF
+OR INABILITY TO USE THE FONT SOFTWARE. THE LICENSOR'S TOTAL LIABILITY UNDER
+THIS LICENCE SHALL NOT EXCEED THE AMOUNT PAID FOR THE FONT SOFTWARE.
+
+9. TERMINATION
+This licence terminates automatically if you breach any of its terms. On
+termination you must stop using the Font Software and delete all copies. The
+Licensor may also terminate this licence on written notice for material breach
+that is not cured within fourteen (14) days. Sections 3, 4, 7, 8 and 10 survive
+termination.
+
+10. GENERAL
+This licence is governed by the laws of the Licensor's principal place of
+business, without regard to conflict-of-law rules. The courts located there
+have exclusive jurisdiction over disputes arising from this licence. If any
+provision is held unenforceable, the remaining provisions remain in effect.
+This licence is the entire agreement between the parties concerning the Font
+Software and replaces any prior discussions. It may be amended only in writing
+signed by the Licensor.
+
+For licensing questions, support or additional seats, use the contact channel
+provided with your purchase.

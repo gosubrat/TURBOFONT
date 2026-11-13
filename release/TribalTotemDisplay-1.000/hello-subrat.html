@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Hello Subrat — Tribal Totem Display</title>
+<style>
+  @font-face {
+    font-family: "Tribal Totem Display";
+    src: url("fonts/TribalTotemDisplay-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Tribal Totem Display Flat";
+    src: url("fonts/TribalTotemDisplayFlat-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --red: #A52714;
+    --yellow: #F2C511;
+    --ink: #1a1a1a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--red);
+    color: var(--yellow);
+  }
+
+  body {
+    font-family: "Tribal Totem Display", Impact, sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body.flat { font-family: "Tribal Totem Display Flat", Impact, sans-serif; }
+
+  .page {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    padding: 40px 32px 64px;
+  }
+
+  .kicker {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    opacity: .72;
+    margin-bottom: 22px;
+  }
+
+  .hero {
+    font-size: clamp(54px, 12.5vw, 190px);
+    line-height: .86;
+    letter-spacing: -.02em;
+    margin: 0 0 18px;
+  }
+
+  .dek {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: clamp(12px, 1.4vw, 15px);
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: .02em;
+    opacity: .8;
+    max-width: 640px;
+    margin: 0 0 42px;
+  }
+
+  .rule {
+    height: 2px;
+    background: var(--yellow);
+    opacity: .35;
+    margin: 0 0 34px;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px 32px;
+    padding: 28px 0;
+    border-top: 1px solid rgba(242, 197, 17, .28);
+  }
+
+  .section:first-of-type { border-top: 0; }
+
+  .label {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    opacity: .55;
+    padding-top: 8px;
+  }
+
+  .life {
+    font-size: clamp(64px, 13vw, 170px);
+    line-height: .86;
+    margin: 0;
+  }
+
+  .copy {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: clamp(13px, 1.5vw, 16px);
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: .01em;
+    opacity: .88;
+    max-width: 620px;
+    margin: 14px 0 0;
+  }
+
+  .glyphs {
+    font-size: clamp(30px, 5.1vw, 62px);
+    line-height: 1.25;
+    letter-spacing: .03em;
+    word-spacing: .18em;
+    overflow-wrap: anywhere;
+    margin: 0;
+  }
+
+  .numbers {
+    font-size: clamp(34px, 6vw, 72px);
+    line-height: 1.1;
+    letter-spacing: .06em;
+    margin: 0;
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 0;
+  }
+
+  button {
+    appearance: none;
+    background: transparent;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    border-radius: 0;
+    padding: 8px 14px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: .7;
+  }
+
+  button:hover { opacity: 1; }
+  button[aria-pressed="true"] { background: var(--yellow); color: var(--red); opacity: 1; }
+
+  .note {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .02em;
+    opacity: .55;
+    margin-top: 34px;
+    max-width: 760px;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 2px solid var(--yellow);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    opacity: .65;
+  }
+
+  body.flat .art { display: none; }
+  body.flat .flat-note { display: inline; }
+  .flat-note { display: none; }
+
+  @media (max-width: 640px) {
+    .page { padding: 26px 20px 44px; }
+    .section { grid-template-columns: 1fr; gap: 10px; }
+    .label { padding-top: 0; }
+    .hero { font-size: clamp(46px, 17vw, 100px); }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="kicker">Tribal Totem Display &nbsp;/&nbsp; 1.000 &nbsp;/&nbsp; commercial release</div>
+
+  <h1 class="hero">hello&nbsp;subrat</h1>
+  <p class="dek">
+    A bold little page about life, letters and numbers — set in a heavy
+    slab-sans display face with illustrated colour line art. Lowercase input
+    renders as capitals by design.
+  </p>
+
+  <div class="section">
+    <div class="label">Life</div>
+    <div>
+      <p class="life">life</p>
+      <p class="copy">
+        Life is short. Make it loud. Every day is a blank page, and the good
+        parts are the marks you leave on it — a word, a colour, a number that
+        means something. Start with hello.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">A–Z</div>
+    <p class="glyphs">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+  </div>
+
+  <div class="section">
+    <div class="label">0–9</div>
+    <p class="numbers">0 1 2 3 4 5 6 7 8 9</p>
+  </div>
+
+  <div class="section">
+    <div class="label">Artwork</div>
+    <div>
+      <div class="controls" role="group" aria-label="Artwork variants">
+        <button type="button" data-set="" aria-pressed="true">Base</button>
+        <button type="button" data-set="ss01" aria-pressed="false">Set 01</button>
+        <button type="button" data-set="ss02" aria-pressed="false">Set 02</button>
+        <button type="button" data-set="ss03" aria-pressed="false">Set 03</button>
+        <button type="button" id="flat" aria-pressed="false">Flat fallback</button>
+      </div>
+      <p class="note">
+        <span class="art">Colour artwork uses the OpenType SVG table with a
+        COLRv0 fallback.</span>
+        <span class="flat-note">The flat companion has no colour tables —
+        useful for Word, older apps and print workflows.</span>
+        Switch variants to see the four illustrated sets.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Tribal Totem Display Black</span>
+    <span>hello subrat / life / a–z / 0–9</span>
+  </div>
+
+</main>
+
+<script>
+  const buttons = [...document.querySelectorAll('button[data-set]')];
+  const flat = document.getElementById('flat');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
+      document.body.style.fontFeatureSettings = btn.dataset.set
+        ? `"${btn.dataset.set}"` : 'normal';
+    });
+  });
+
+  flat.addEventListener('click', () => {
+    const on = document.body.classList.toggle('flat');
+    flat.setAttribute('aria-pressed', String(on));
+  });
+</script>
+</body>
+</html>

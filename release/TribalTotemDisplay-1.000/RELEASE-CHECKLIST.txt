@@ -1,0 +1,12 @@
+SELLER CHECKLIST BEFORE PUBLISHING
+==================================
+[ ] Put your legal name/entity and support email/website into LICENSE-EULA.txt
+    and your marketplace listing. The current licensor line is
+    "Tribal Totem Display project".
+[ ] Have a lawyer review LICENSE-EULA.txt for your jurisdiction.
+[ ] Confirm you own the rights to the artwork and name.
+[ ] Run a trademark search for "Tribal Totem Display".
+[ ] Test install/rendering on your own macOS and Windows machines and in
+    Adobe InDesign/Illustrator if you sell to those users.
+[ ] Upload the zip and listing images, and set the price.
+[ ] Archive the SHA256SUMS.txt file with the release.

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tribal Totem Display - specimen</title>
+<style>
+  @font-face {
+    font-family: "Tribal Totem Display";
+    src: url("dist/TribalTotemDisplay-Black.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Tribal Totem Display Flat";
+    src: url("dist/TribalTotemDisplayFlat-Black.otf") format("opentype");
+  }
+  html, body { margin: 0; padding: 0; }
+  body { background: #A52714; color: #F2C511; font-family: "Tribal Totem Display", sans-serif; }
+  .page { padding: 48px 56px 64px; }
+  .hero { font-size: 160px; line-height: 1.0; letter-spacing: -0.01em; }
+  .row { font-size: 56px; line-height: 1.2; margin-top: 24px; }
+  .small { font-size: 42px; line-height: 1.25; }
+  .label { font-family: ui-monospace, monospace; font-size: 13px; letter-spacing: .08em;
+            text-transform: uppercase; color: #F2C511; opacity: .75; margin-bottom: 6px; }
+  .rule { height: 2px; background: #F2C511; opacity: .35; margin: 34px 0 22px; }
+  .flat { font-family: "Tribal Totem Display Flat", sans-serif;
+           color: #1a1a1a; background: #F2C511; display: inline-block;
+           padding: 8px 18px; }
+  .note { font-family: ui-monospace, monospace; font-size: 12px; color: #F2C511;
+           opacity: .7; margin-top: 30px; max-width: 900px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">TOTEM</div>
+  <div class="rule"></div>
+
+  <div class="label">base</div>
+  <div class="row">A B C D E F G H I J K L M<br>N O P Q R S T U V W X Y Z</div>
+
+  <div class="label">stylistic set 01 &mdash; font-feature-settings: "ss01"</div>
+  <div class="row" style='font-feature-settings: "ss01"'>A B C D E F G H I J K L M<br>N O P Q R S T U V W X Y Z</div>
+
+  <div class="label">stylistic set 02 &mdash; font-feature-settings: "ss02"</div>
+  <div class="row" style='font-feature-settings: "ss02"'>A B C D E F G H I J K L M<br>N O P Q R S T U V W X Y Z</div>
+
+  <div class="label">stylistic set 03 &mdash; font-feature-settings: "ss03"</div>
+  <div class="row" style='font-feature-settings: "ss03"'>A B C D E F G H I J K L M<br>N O P Q R S T U V W X Y Z</div>
+
+  <div class="label">flat fallback (no colour tables)</div>
+  <div class="row"><span class="flat">TOTEM</span></div>
+
+  <div class="label">Latin-1 uppercase accents</div>
+  <div class="row small">À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö Ø Ù Ú Û Ü Ý Þ Œ Ÿ</div>
+
+  <div class="label">kerning &mdash; AVATAR To. (A)</div>
+  <div class="row" style="font-size:72px">AVATAR To. (A)</div>
+
+  <div class="label">digits &amp; punctuation</div>
+  <div class="row small">0 1 2 3 4 5 6 7 8 9<br>. , : ; ! ? ' &quot; - – — ( )<br>[ ] / \ # + = _ |<br>&amp; @ $ % * &lt; &gt; ^ ~ ` { }<br>€ £ ¥ ¢ … • ° ± × ÷ © ® ™ ‘ ’ “ ”</div>
+
+  <div class="note">
+    Version 1.000 &mdash; 120 glyphs: A&ndash;Z, 0&ndash;9,
+    punctuation and symbols, four artwork variants each.<br>
+    Colour glyphs use the OpenType SVG table (stroked motifs, round caps) and a
+    COLRv0 fallback. Display use only: minimum recommended size 48&nbsp;px.
+  </div>
+</div>
+</body>
+</html>

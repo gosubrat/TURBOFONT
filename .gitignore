@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+proof.html
+woff2-test.html
+fb-out.txt
+fb-flat.txt
+fb-report.json
